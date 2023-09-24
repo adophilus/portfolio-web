@@ -31,7 +31,6 @@ jobs:
           corepack enable
           corepack prepare pnpm@latest --activate
       - name: Install dependencies
-        working-directory: ./backend
         run: pnpm install
       - name: Build project
         run: pnpm build
